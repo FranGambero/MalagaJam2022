@@ -44,10 +44,16 @@ namespace MJam22.States
 
         public void LoadState(StateDataModel state)
         {
+            LoadAudio(state);
             LoadCycleTime(state.duration);
             LoadView(state.isOffice);
             LoadStress(state.timedStress, state.hitStress, state.missStress);
             LoadTracks(new List<List<float>>{state.FirstTrack, state.SecondTrack, state.ThirdTrack, state.FourthTrack});
+        }
+
+        void LoadAudio(StateDataModel state)
+        {
+            conductorBehaviour.LoadNewTrack(state.clip, state.bpm);
         }
 
         void LoadCycleTime(int duration) => cycleTimeController.SetCycleTime(duration);

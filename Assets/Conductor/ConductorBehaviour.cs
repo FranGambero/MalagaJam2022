@@ -19,7 +19,7 @@ namespace MJam22.Conductor
 
         void Awake()
         {
-            conductor = new Conductor(bpm, musicSource, OnNewBeat, OnUpdatedSongTemp);
+            //conductor = new Conductor(bpm, musicSource, OnNewBeat, OnUpdatedSongTemp);
         }
 
         void FixedUpdate()
@@ -29,6 +29,7 @@ namespace MJam22.Conductor
 
         public void StartConductor()
         {
+            conductor = new Conductor(bpm, musicSource, OnNewBeat, OnUpdatedSongTemp);
             conductor.StartSong();
             beatOffset = firstBeatOffset;
             
@@ -40,6 +41,12 @@ namespace MJam22.Conductor
             conductor.StopSong();
             
             isActive = false;
+        }
+
+        public void LoadNewTrack(AudioClip clip, float bpm)
+        {
+            musicSource.clip = clip;
+            this.bpm = bpm;
         }
 
         void UpdateSongPosition()

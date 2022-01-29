@@ -1291,6 +1291,10 @@ PrefabInstance:
       value: Behaviours
       objectReference: {fileID: 0}
     - target: {fileID: 7686668527199617842, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
+      propertyPath: bpm
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686668527199617842, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
       propertyPath: OnUpdatedSongTemp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 679583631}
@@ -1306,6 +1310,10 @@ PrefabInstance:
       propertyPath: OnUpdatedSongTemp.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 199092069}
+    - target: {fileID: 7686668527199617843, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 580182a5f6052dd49971d69898151fd8, type: 3}
     - target: {fileID: 7686668527428085340, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
       propertyPath: trackControllers.Array.data[0]
       value: 

@@ -7,6 +7,11 @@ namespace MJam22.States
     [Serializable]
     public class StateDataModel
     {
+        [Header("Audio")] 
+        [SerializeField] public AudioClip clip;
+        [SerializeField] public float bpm;
+        [SerializeField] public float secondsToArrive; 
+        
         [Header("Cycle Time")]
         [SerializeField] public int duration;
 

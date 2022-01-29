@@ -17,6 +17,11 @@
           <e p="Conductor.cs" t="Include" />
           <e p="ConductorBehaviour.cs" t="Include" />
         </e>
+        <e p="Fonts" t="Include">
+          <e p="dream_glory" t="Include">
+            <e p="Read this.txt" t="Include" />
+          </e>
+        </e>
         <e p="GameManager" t="Include">
           <e p="GameManager.cs" t="Include" />
         </e>
