@@ -39,6 +39,11 @@ namespace MJam22.Conductor
             dspSongTime = (float)AudioSettings.dspTime;
         }
 
+        public void StopSong()
+        {
+            musicSource.Stop();
+        }
+
         public void UpdateSongPosition(float firstBeatOffset)
         {
             songPosSec = (float)(AudioSettings.dspTime - dspSongTime - firstBeatOffset);

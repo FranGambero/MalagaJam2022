@@ -15,6 +15,10 @@ namespace MJam22.Stress
         StressController stressController;
         UnityEvent OnMaxStress = new UnityEvent();
 
+        float timedStress = 1;
+        float missStress = 10;
+        float hitStress = 10;
+
         void Start()
         {
             stressController = new StressController(maxStress, OnMaxStress);
@@ -26,18 +30,21 @@ namespace MJam22.Stress
         {
             foreach(var beatTrackController in beatTrackControllers)
             {
-                beatTrackController.onNoteOutOfSight.AddListener((NoteBehaviour)=>AddStress(10));
+                beatTrackController.onNoteOutOfSight.AddListener((NoteBehaviour)=>AddFailStress());
             }
             
             OnMaxStress.AddListener(()=>Debug.Log("Max Stress"));
         }
 
-        void AddStress(int amount)
+        public void SetTimeStress(float timedStress) => this.timedStress = timedStress;
+        public void SetMissStress(float failStress) => this.missStress = failStress;
+        public void SetHitStress(float hitStress) => this.hitStress = hitStress;
+        void ViewStress() => stressView.FillBar(stressController.Stress);
+        
+        void AddFailStress()
         {
-            stressController.IncreaseStress(amount);
+            stressController.IncreaseStress(missStress);
             ViewStress();
         }
-
-        void ViewStress() => stressView.FillBar(stressController.Stress);
     }
 }
