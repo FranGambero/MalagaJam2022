@@ -164,8 +164,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2411297502641982766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.52228, y: 1.52228, z: 0.76114}
+  m_LocalPosition: {x: -0.003, y: -0.058, z: 0}
+  m_LocalScale: {x: 0.3307, y: 0.6614, z: 0.6614}
   m_Children: []
   m_Father: {fileID: 4864082032156566913}
   m_RootOrder: 0
@@ -210,7 +210,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 4748470198486955293, guid: 775bbdc4db1c4364fbf06bd025dce1ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -270,8 +270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6741358b933ec34380610471caab8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputKey: 113
   secondsToArrive: 0.7
+  inputKey: 113
   NotePrefab: {fileID: 6166677543477946852, guid: 3d24e9523ab05c34aac79ccb402e9ebc, type: 3}
   NoteSpawnPosition: {fileID: 4708279188852636357}
   NoteEndPosition: {fileID: 3997537464887768382}
@@ -522,7 +522,7 @@ Transform:
   m_GameObject: {fileID: 8000629353215977826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 3.8664, z: 0}
-  m_LocalScale: {x: 1.52228, y: 9.774652, z: 1}
+  m_LocalScale: {x: 0.5, y: 9.774652, z: 1}
   m_Children: []
   m_Father: {fileID: 525117222068180529}
   m_RootOrder: 0
@@ -567,7 +567,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 8891180011573125036, guid: 775bbdc4db1c4364fbf06bd025dce1ab, type: 3}
   m_Color: {r: 0.14284442, g: 0.19480637, b: 0.7075472, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
