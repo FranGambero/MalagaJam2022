@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour {
 
     private void Start() {
         if (!myAS.isPlaying) {
+            myAS.time = 36;
             myAS.Play();
 
         }
