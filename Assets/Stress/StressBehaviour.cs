@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using MJam22.Beat;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,11 +10,15 @@ namespace MJam22.Stress
     {
         [SerializeField] float maxStress;
         [SerializeField] StressView stressView;
-
         [SerializeField] List<BeatTrackController> beatTrackControllers;
 
         StressController stressController;
+        Coroutine timedCoroutine;
         UnityEvent OnMaxStress = new UnityEvent();
+
+        float timedStress;
+        float missStress;
+        float hitStress;
 
         void Start()
         {
@@ -26,18 +31,54 @@ namespace MJam22.Stress
         {
             foreach(var beatTrackController in beatTrackControllers)
             {
-                beatTrackController.onNoteOutOfSight.AddListener((NoteBehaviour)=>AddStress(10));
+                beatTrackController.onNoteOutOfSight.AddListener((NoteBehaviour)=>IncreaseByFailStress());
+                beatTrackController.onHitNote.AddListener(ReduceByHitStress);
             }
             
             OnMaxStress.AddListener(()=>Debug.Log("Max Stress"));
         }
 
-        void AddStress(int amount)
+        public void SetTimeStress(float timedStress) => this.timedStress = timedStress;
+        public void SetMissStress(float failStress) => this.missStress = failStress;
+        public void SetHitStress(float hitStress) => this.hitStress = hitStress;
+        public void StartTimedStress()
         {
-            stressController.IncreaseStress(amount);
-            ViewStress();
+            timedCoroutine = StartCoroutine(StressByTime());
+        }
+
+        public void StoptimedStress()
+        {
+            if(timedCoroutine!=null)
+                StopCoroutine(timedCoroutine);
         }
 
         void ViewStress() => stressView.FillBar(stressController.Stress);
+        
+        void IncreaseByFailStress()
+        {
+            stressController.IncreaseStress(missStress);
+            ViewStress();
+        }
+
+        void IncreaseByTimeStress()
+        {
+            stressController.IncreaseStress(timedStress);
+            ViewStress();
+        }
+
+        void ReduceByHitStress()
+        {
+            stressController.IncreaseStress(-hitStress);
+            ViewStress();
+        }
+
+        IEnumerator StressByTime()
+        {
+            while(true)
+            {
+                yield return new WaitForSeconds(1);
+                IncreaseByTimeStress();   
+            }
+        }
     }
 }
