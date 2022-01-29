@@ -1,4 +1,5 @@
-﻿using UnityEngine.Events;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace MJam22.Stress
 {
@@ -18,6 +19,8 @@ namespace MJam22.Stress
         public void IncreaseStress(float amount)
         {
             stressAmount += amount;
+            stressAmount = Mathf.Min(stressAmount, maxStress);
+            stressAmount = Mathf.Max(stressAmount, 0);
             CheckStress();
         }
 

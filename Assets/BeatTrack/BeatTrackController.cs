@@ -1,24 +1,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using Utils;
 
 namespace MJam22.Beat
 {
     public class BeatTrackController : MonoBehaviour
     {
-        [SerializeField] KeyCode inputKey;
         public float secondsToArrive;
+
+        [SerializeField] KeyCode inputKey;
         [SerializeField] GameObject NotePrefab;
         [SerializeField] Transform NoteSpawnPosition;
         [SerializeField] Transform NoteEndPosition;
-        
         [SerializeField] List<float> notesToSpawn;
 
         NoteHolder noteHolder;
+        bool isActive = false;
         
         #region Events
         public readonly NoteBehaviourUnityEvent onNoteOutOfSight = new NoteBehaviourUnityEvent();
+        public readonly UnityEvent onHitNote = new UnityEvent();
         #endregion
 
         void Awake()
@@ -38,6 +41,11 @@ namespace MJam22.Beat
             TryClearNotes();
         }
 
+        public void StartTrack() => isActive = true;
+        public void StopTrack() => isActive = false;
+
+        public void SetNotes(List<float> notes) => notesToSpawn = notes;
+
         void InitListeners()
         {
             onNoteOutOfSight.AddListener(FailNote);
@@ -45,17 +53,25 @@ namespace MJam22.Beat
 
         void MoveNotes()
         {
+            if(!isActive)
+                return;
             noteHolder.MoveNotes(secondsToArrive);
         }
 
         #region Spawn
         public void TrySpawnNote(float songPosSec)
         {
+            if(!isActive)
+                return;
+            
             TrySpawnNote(songPosSec, secondsToArrive);
         }
         
         void TrySpawnNote(float songPosSec, float travelSeconds)
         {
+            if(!notesToSpawn.Any())
+                return;
+            
             var nextNoteBeat = notesToSpawn.First();
             var travelBeat = travelSeconds / (60 / 126f);
             if((songPosSec + travelBeat) >= nextNoteBeat)
@@ -79,11 +95,14 @@ namespace MJam22.Beat
         #region Clear
         void TryClearNotes()
         {
+            if(!isActive)
+                return;
+            
             if(Input.GetKeyDown(inputKey))
-                ClearNotes();
+                ValidateNotes();
         }
         
-        void ClearNotes()
+        void ValidateNotes()
         {
             var notesToClear = noteHolder.GetActivatedNotes().ToList();
             Debug.Log($"{notesToClear.Count} notes to clear");
@@ -92,6 +111,7 @@ namespace MJam22.Beat
             {
                 var note = notesToClear.First();
                 RemoveNote(note);
+                onHitNote.Invoke();
             }
         }
 
@@ -106,10 +126,6 @@ namespace MJam22.Beat
             noteHolder.RemoveNotes(note);
             Destroy(note.gameObject);
         }
-        #endregion
-        
-        #region SupportMethods
-        
         #endregion
     }   
 }
