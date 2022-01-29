@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using Utils;
 
 namespace MJam22.Beat
@@ -20,6 +21,7 @@ namespace MJam22.Beat
         
         #region Events
         public readonly NoteBehaviourUnityEvent onNoteOutOfSight = new NoteBehaviourUnityEvent();
+        public readonly UnityEvent onHitNote = new UnityEvent();
         #endregion
 
         void Awake()
@@ -109,6 +111,7 @@ namespace MJam22.Beat
             {
                 var note = notesToClear.First();
                 RemoveNote(note);
+                onHitNote.Invoke();
             }
         }
 

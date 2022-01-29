@@ -5,7 +5,7 @@ namespace MJam22.Conductor
 {
     public class ConductorBehaviour : MonoBehaviour
     {
-        public UnityEvent<int> OnNewBeat = new UnityEvent<int>();
+        UnityEvent<int> OnNewBeat = new UnityEvent<int>();
         public UnityEvent<float> OnUpdatedSongTemp = new UnityEvent<float>();
         
         [SerializeField] float firstBeatOffset = 0;

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MJam22.Beat;
 using MJam22.Conductor;
 using MJam22.Stress;
@@ -9,7 +10,7 @@ namespace MJam22.States
 {
     public class StateController : MonoBehaviour
     {
-        [SerializeField] List<StateDataModel> states;
+        [SerializeField] List<StateDataModelScriptable> states;
         [SerializeField] ConductorBehaviour conductorBehaviour;
         [SerializeField] CycleTimeController cycleTimeController;
         [SerializeField] StressBehaviour stressBehaviour;
@@ -39,6 +40,8 @@ namespace MJam22.States
         }
 
         #region Load
+        public void LoadState(int currentCycle) => LoadState(states[currentCycle].Data);
+
         public void LoadState(StateDataModel state)
         {
             LoadCycleTime(state.duration);
@@ -65,7 +68,7 @@ namespace MJam22.States
         {
             for(var i = 0; i < tracksManager.TrackControllers.Count; i++)
             {
-                tracksManager.TrackControllers[i].SetNotes(tracks[i]);
+                tracksManager.TrackControllers[i].SetNotes(tracks[i].ToList());
             }
         }
         #endregion
@@ -75,6 +78,9 @@ namespace MJam22.States
         {
             conductorBehaviour.StartConductor();
             tracksManager.StartTracks();
+            cycleTimeController.StartCycle();
+            stressBehaviour.StoptimedStress();
+            stressBehaviour.StartTimedStress();
         }
         #endregion
     }
