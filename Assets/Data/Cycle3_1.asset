@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Cycle3_1
   m_EditorClassIdentifier: 
   data:
-    duration: 30
+    clip: {fileID: 8300000, guid: 38713afd46b185b4792e8f713e69a701, type: 3}
+    bpm: 62
+    secondsToArrive: 0
+    duration: 34
     isOffice: 1
     timedStress: 3
     hitStress: 0
