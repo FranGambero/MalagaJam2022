@@ -20,8 +20,8 @@ MonoBehaviour:
     duration: 40
     isOffice: 0
     timedStress: 0
-    hitStress: 2
-    missStress: 0.25
+    hitStress: 1
+    missStress: 0.5
     FirstTrack:
     - 12
     - 22

@@ -15,44 +15,89 @@ MonoBehaviour:
   data:
     clip: {fileID: 8300000, guid: 096e3f6c8784ad9438e801a0e1fa5e97, type: 3}
     bpm: 124
-    firstBeatOffset: 0
-    secondsToArrive: 1
+    firstBeatOffset: -0.2
+    secondsToArrive: 1.5
     duration: 40
     isOffice: 0
     timedStress: 0
-    hitStress: 2
-    missStress: 0.25
+    hitStress: 1
+    missStress: 0.5
     FirstTrack:
     - 12
+    - 14
+    - 14.75
+    - 19
     - 22
+    - 23
+    - 26
+    - 27
+    - 30
+    - 31
+    - 33
+    - 34
     - 37
     - 41
     - 42
     - 50
     - 52
     - 60
+    - 67.5
+    - 68
+    - 69
+    - 70
+    - 70.5
     SecondTrack:
     - 10
     - 12
+    - 17
+    - 17.5
     - 20
     - 25
     - 32
     - 37
+    - 40.5
+    - 41
+    - 42.5
+    - 43
+    - 43.5
+    - 47
+    - 48
+    - 49
     - 50
     - 60
+    - 68.5
+    - 70
+    - 70.5
     ThirdTrack:
     - 9
     - 11
     - 13
+    - 16
+    - 16.5
     - 25
     - 27
     - 29
     - 31
-    - 55
+    - 51
+    - 54
     - 57
+    - 57.5
     - 59
+    - 60.25
+    - 61
+    - 61.5
+    - 62
+    - 64
+    - 65
+    - 65.5
+    - 66
+    - 70
+    - 70.5
     FourthTrack:
     - 8
+    - 8.5
+    - 9
+    - 9.5
     - 10
     - 14
     - 18
@@ -63,3 +108,7 @@ MonoBehaviour:
     - 49
     - 55
     - 64
+    - 67
+    - 69
+    - 70
+    - 70.5

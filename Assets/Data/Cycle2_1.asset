@@ -21,7 +21,7 @@ MonoBehaviour:
     isOffice: 1
     timedStress: 1
     hitStress: 0
-    missStress: 2
+    missStress: 2.5
     FirstTrack:
     - 7
     - 12
