@@ -8,6 +8,18 @@ TextureImporter:
   - first:
       213: -6707250538300688797
     second: otros_1
+  - first:
+      213: -193071682137892309
+    second: otros_2
+  - first:
+      213: -2628272842881396458
+    second: otros_3
+  - first:
+      213: 1661091487963114399
+    second: otros_4
+  - first:
+      213: 8662443483906633441
+    second: otros_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -146,9 +158,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 547
-        y: 607
-        width: 326
-        height: 326
+        y: 606
+        width: 327
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,6 +170,90 @@ TextureImporter:
       bones: []
       spriteID: 3663a050c2f0be2a0800000000000000
       internalID: -6707250538300688797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otros_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 347
+        width: 171
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2adbf9f352125df0800000000000000
+      internalID: -193071682137892309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otros_3
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 377
+        width: 255
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6119f3b46cf768bd0800000000000000
+      internalID: -2628272842881396458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otros_4
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 92
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b677f48e16d0710800000000000000
+      internalID: 1661091487963114399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otros_5
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 92
+        width: 142
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eee629f37e273870800000000000000
+      internalID: 8662443483906633441
       vertices: []
       indices: 
       edges: []
