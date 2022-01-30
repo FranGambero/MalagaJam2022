@@ -189,7 +189,7 @@ MonoBehaviour:
   officeBackground: {fileID: 1245131914}
   clubBackground: {fileID: 325175224}
   dragPosition: {fileID: 1153277717}
-  officinistAnimator: {fileID: 0}
+  officinistAnimator: {fileID: 1006061899}
   officeHitParticle: {fileID: 784846213}
   dragPoses:
   - {fileID: 1980496122}
@@ -872,6 +872,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+--- !u!95 &1006061899 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5611438144175798834, guid: 38d807f0981f38f4a8bfd8637195ba8e, type: 3}
+  m_PrefabInstance: {fileID: 9106553642086770576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1052435025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6457240114705960799, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
