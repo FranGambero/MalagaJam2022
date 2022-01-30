@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="BeatTrack" t="Include">
+          <e p="BeatTrackButtonView.cs" t="Include" />
           <e p="BeatTrackController.cs" t="Include" />
           <e p="BeatTracksManager.cs" t="Include" />
           <e p="NoteBehaviour.cs" t="Include" />

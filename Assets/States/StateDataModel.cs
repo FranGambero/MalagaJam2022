@@ -10,6 +10,7 @@ namespace MJam22.States
         [Header("Audio")] 
         [SerializeField] public AudioClip clip;
         [SerializeField] public float bpm;
+        [SerializeField] public float firstBeatOffset;
         [SerializeField] public float secondsToArrive; 
         
         [Header("Cycle Time")]

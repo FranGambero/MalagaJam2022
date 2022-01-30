@@ -43,10 +43,11 @@ namespace MJam22.Conductor
             isActive = false;
         }
 
-        public void LoadNewTrack(AudioClip clip, float bpm)
+        public void LoadNewTrack(AudioClip clip, float bpm, float firstBeatOffset)
         {
             musicSource.clip = clip;
             this.bpm = bpm;
+            this.firstBeatOffset = firstBeatOffset;
         }
 
         void UpdateSongPosition()

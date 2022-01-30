@@ -8,9 +8,10 @@ namespace MJam22.Beat
 {
     public class BeatTrackController : MonoBehaviour
     {
-        public float secondsToArrive;
+        float secondsToArrive;
 
         [SerializeField] KeyCode inputKey;
+        [SerializeField] BeatTrackButtonView buttonView;
         [SerializeField] GameObject NotePrefab;
         [SerializeField] Transform NoteSpawnPosition;
         [SerializeField] Transform NoteEndPosition;
@@ -45,6 +46,7 @@ namespace MJam22.Beat
         public void StopTrack() => isActive = false;
 
         public void SetNotes(List<float> notes) => notesToSpawn = notes;
+        public void SetNoteSpeed(float secondsToArrive) => this.secondsToArrive = secondsToArrive;
 
         void InitListeners()
         {
@@ -97,9 +99,17 @@ namespace MJam22.Beat
         {
             if(!isActive)
                 return;
-            
+
             if(Input.GetKeyDown(inputKey))
+            {
                 ValidateNotes();
+                buttonView.Press();                
+            }
+
+            if(Input.GetKeyUp(inputKey))
+            {
+                buttonView.UnPress();
+            }
         }
         
         void ValidateNotes()

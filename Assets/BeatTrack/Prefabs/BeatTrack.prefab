@@ -354,6 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secondsToArrive: 0.7
   inputKey: 113
+  buttonView: {fileID: 1822049706821111239}
   NotePrefab: {fileID: 6166677543477946852, guid: 3d24e9523ab05c34aac79ccb402e9ebc, type: 3}
   NoteSpawnPosition: {fileID: 4708279188852636357}
   NoteEndPosition: {fileID: 3997537464887768382}
@@ -376,6 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4864082032156566913}
+  - component: {fileID: 1822049706821111239}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -399,6 +401,20 @@ Transform:
   m_Father: {fileID: 2411297504159534837}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1822049706821111239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2933775227091567194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9337e74e8f8e47efaaa62177e440e66f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnPressedBtn: {fileID: 2411297502641982766}
+  PressedBtn: {fileID: 1850311466507271140}
 --- !u!1 &3987795404577567821
 GameObject:
   m_ObjectHideFlags: 0

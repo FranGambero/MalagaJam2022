@@ -15,7 +15,8 @@ MonoBehaviour:
   data:
     clip: {fileID: 8300000, guid: a609e6270736b7e4895eb4f04c84476c, type: 3}
     bpm: 62
-    secondsToArrive: 0
+    firstBeatOffset: 0
+    secondsToArrive: 2.5
     duration: 32
     isOffice: 1
     timedStress: 2

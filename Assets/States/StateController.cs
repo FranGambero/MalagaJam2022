@@ -48,12 +48,12 @@ namespace MJam22.States
             LoadCycleTime(state.duration);
             LoadView(state.isOffice);
             LoadStress(state.timedStress, state.hitStress, state.missStress);
-            LoadTracks(new List<List<float>>{state.FirstTrack, state.SecondTrack, state.ThirdTrack, state.FourthTrack});
+            LoadTracks(new List<List<float>>{state.FirstTrack, state.SecondTrack, state.ThirdTrack, state.FourthTrack}, state.secondsToArrive);
         }
 
         void LoadAudio(StateDataModel state)
         {
-            conductorBehaviour.LoadNewTrack(state.clip, state.bpm);
+            conductorBehaviour.LoadNewTrack(state.clip, state.bpm, state.firstBeatOffset);
         }
 
         void LoadCycleTime(int duration) => cycleTimeController.SetCycleTime(duration);
@@ -70,11 +70,12 @@ namespace MJam22.States
             stressBehaviour.SetMissStress(missStress);
         }
 
-        void LoadTracks(List<List<float>> tracks)
+        void LoadTracks(List<List<float>> tracks, float speed)
         {
             for(var i = 0; i < tracksManager.TrackControllers.Count; i++)
             {
                 tracksManager.TrackControllers[i].SetNotes(tracks[i].ToList());
+                tracksManager.TrackControllers[i].SetNoteSpeed(speed);
             }
         }
         #endregion
