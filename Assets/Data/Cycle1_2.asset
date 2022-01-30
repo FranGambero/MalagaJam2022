@@ -20,7 +20,7 @@ MonoBehaviour:
     duration: 40
     isOffice: 0
     timedStress: 0
-    hitStress: 1
+    hitStress: 0.75
     missStress: 0.5
     FirstTrack:
     - 12
