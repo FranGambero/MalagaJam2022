@@ -75,7 +75,7 @@ namespace MJam22.Beat
                 return;
             
             var nextNoteBeat = notesToSpawn.First();
-            var travelBeat = travelSeconds / (60 / 126f);
+            var travelBeat = travelSeconds / (60 / 62f);
             if((songPosSec + travelBeat) >= nextNoteBeat)
             {
                 Debug.Log($"Next note Beat: {nextNoteBeat}");

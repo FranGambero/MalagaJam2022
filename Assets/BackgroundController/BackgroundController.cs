@@ -14,6 +14,7 @@ namespace MJam22.BackgroundController
         [SerializeField] List<GameObject> dragPoses;
 
         bool isOffice;
+        int currentCycle;
 
         public void OnNoteHitEffect()
         {
@@ -42,10 +43,14 @@ namespace MJam22.BackgroundController
         public void ChangeStatus(bool isOffice, int cycle)
         {
             this.isOffice = isOffice;
+            this.currentCycle = CalculatedDay(cycle);
             ChangeBackground();
         }
 
-        bool CycleIsDay(int cycle) => cycle % 2 == 0;
+        int CalculatedDay(int cycle) {
+
+            return (cycle % 2 == 0) ? cycle / 2 : (cycle - 1)/2;
+        }
 
         void ChangeBackground()
         {

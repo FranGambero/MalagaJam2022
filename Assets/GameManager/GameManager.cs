@@ -10,7 +10,6 @@ namespace MJam22.GameManager
 
         public void Start()
         {
-            stateController.Init();
         }
 
         public void Update()

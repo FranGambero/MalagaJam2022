@@ -16,29 +16,12 @@ namespace MJam22.States
         [SerializeField] CycleTimeController cycleTimeController;
         [SerializeField] StressBehaviour stressBehaviour;
         [SerializeField] BeatTracksManager tracksManager;
-        [SerializeField] Image background;
         
         State currentState;
 
-        public void Init()
-        {
-            currentState = new OfficeState(stressBehaviour, background);
-            currentState.Start();
-        }
+      
 
-        public void ChangeState()
-        {
-            if(currentState.GetType() == typeof(OfficeState))
-            {
-                currentState = new ClubState(stressBehaviour, background);
-                currentState.Start();                
-            }
-            else if(currentState.GetType() == typeof(ClubState))
-            {
-                currentState = new OfficeState(stressBehaviour, background);
-                currentState.Start();
-            }
-        }
+        
 
         #region Load
         public void LoadState(int currentCycle) => LoadState(states[currentCycle].Data, currentCycle);
