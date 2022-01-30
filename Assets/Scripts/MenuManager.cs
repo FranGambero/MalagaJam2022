@@ -20,7 +20,7 @@ public class MenuManager : MonoBehaviour {
             configPanel.SetActive(false);
         if (creditsPanel)
             creditsPanel.SetActive(false);
-        StartCoroutine(BlockInputsForSeconds(3));
+        //StartCoroutine(BlockInputsForSeconds(2));
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class MenuManager : MonoBehaviour {
                 }
             }
 
-            if (isEndEscene && Input.anyKeyDown) {
+            if (isEndEscene && Input.GetKeyDown(KeyCode.Space)) {
                 GoStartMenu();
             }
         }
