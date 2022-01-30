@@ -1,5 +1,6 @@
 ﻿using MJam22.States;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace MJam22.GameManager
 {
@@ -43,7 +44,7 @@ namespace MJam22.GameManager
 
         void NoMoreCycles()
         {
-            
+            SceneManager.LoadScene(2);
         }
     }
 }
