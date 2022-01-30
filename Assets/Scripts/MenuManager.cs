@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
     public GameObject configPanel, creditsPanel;
-    public GameObject lastSelected;
+    public bool isEndEscene = false;
+
+    bool isBlocked;
 
     private void Awake() {
         //DontDestroyOnLoad(this.gameObject);
@@ -18,19 +20,31 @@ public class MenuManager : MonoBehaviour {
             configPanel.SetActive(false);
         if (creditsPanel)
             creditsPanel.SetActive(false);
-
+        //StartCoroutine(BlockInputsForSeconds(2));
     }
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            if (configPanel && configPanel.activeSelf) {
-                toggleConfigPanel();
+        if (!isBlocked) {
+            if (Input.GetKeyDown(KeyCode.Escape)) {
+                if (configPanel && configPanel.activeSelf) {
+                    toggleConfigPanel();
 
-            } else if (creditsPanel && creditsPanel.activeSelf) {
-                toggleCreditsPanel();
+                } else if (creditsPanel && creditsPanel.activeSelf) {
+                    toggleCreditsPanel();
+                }
+            }
+
+            if (isEndEscene && Input.GetKeyDown(KeyCode.Space)) {
+                GoStartMenu();
             }
         }
+    }
+
+    IEnumerator BlockInputsForSeconds(float time) {
+        isBlocked = true;
+        yield return new WaitForSeconds(time);
+        isBlocked = false;
     }
 
     public void startGame() {
@@ -60,4 +74,5 @@ public class MenuManager : MonoBehaviour {
     public void closeConfigPanel() {
         toggleConfigPanel();
     }
+
 }
