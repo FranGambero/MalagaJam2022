@@ -30,6 +30,11 @@ namespace MJam22.Beat
             return currentNotes.Where(note => note.CanBePressed);
         }
 
+        public IEnumerable<NoteBehaviour> GetAliveNotes()
+        {
+            return currentNotes;
+        }
+
         public void RemoveNotes(NoteBehaviour note) => currentNotes.Remove(note);
 
         public void RemoveNotes(List<NoteBehaviour> notes)
