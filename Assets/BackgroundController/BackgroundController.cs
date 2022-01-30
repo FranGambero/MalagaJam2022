@@ -13,6 +13,7 @@ namespace MJam22.BackgroundController
         [SerializeField] ParticleSystem officeHitParticle;
 
         [SerializeField] List<GameObject> dragPoses;
+        private GameObject currenDragPose;
 
         bool isOffice;
         int currentCycle;
@@ -21,11 +22,20 @@ namespace MJam22.BackgroundController
         {
             if(isOffice)
             {
-                
+                //officeHitParticle.Play();
             }
             else
             {
-                
+                if(currenDragPose == null) {
+                    currenDragPose = dragPoses.Find(p => p.activeSelf);
+                }
+                currenDragPose.SetActive(false);
+                GameObject tmpCurrenDragPose = dragPoses[Random.Range(0, dragPoses.Count - 1)];
+                if(tmpCurrenDragPose == currenDragPose) {
+                    tmpCurrenDragPose = dragPoses[Random.Range(0, dragPoses.Count - 1)];
+                }
+                currenDragPose = tmpCurrenDragPose;
+                currenDragPose.SetActive(true);
             }
         }
 
