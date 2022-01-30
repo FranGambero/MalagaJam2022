@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: secondsToArrive
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: notesToSpawn.Array.size
@@ -649,7 +649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: secondsToArrive
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: notesToSpawn.Array.size
@@ -1099,7 +1099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: secondsToArrive
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: notesToSpawn.Array.size
@@ -1232,7 +1232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: secondsToArrive
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2411297504159534839, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: m_Name
@@ -1414,6 +1414,10 @@ PrefabInstance:
     - target: {fileID: 7686668527199617842, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
       propertyPath: bpm
       value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686668527199617842, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
+      propertyPath: firstBeatOffset
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7686668527199617842, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
       propertyPath: OnUpdatedSongTemp.m_PersistentCalls.m_Calls.Array.data[0].m_Target

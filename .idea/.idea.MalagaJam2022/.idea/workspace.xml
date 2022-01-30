@@ -24,10 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4c8b582-a5cb-49f4-8357-2482b5f1f839" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/States/StateDataModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/States/StateDataModel.cs" afterDir="false" />
-    </list>
+    <list default="true" id="b4c8b582-a5cb-49f4-8357-2482b5f1f839" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,14 +48,14 @@
         <option value="$PROJECT_DIR$/Assets/States/StateDataModelScriptable.cs" />
         <option value="$PROJECT_DIR$/Assets/BeatTrack/BeatTracksManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Conductor/Conductor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Conductor/ConductorBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackController.cs" />
         <option value="$PROJECT_DIR$/Assets/Stress/StressController.cs" />
         <option value="$PROJECT_DIR$/Assets/States/CycleTimeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Stress/StressBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/States/StateController.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/States/StateDataModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Conductor/ConductorBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/States/StateController.cs" />
       </list>
     </option>
   </component>
@@ -104,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643473856787</updated>
-      <workItem from="1643473861042" duration="15965000" />
+      <workItem from="1643473861042" duration="16887000" />
     </task>
     <servers />
   </component>
