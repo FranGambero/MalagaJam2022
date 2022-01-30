@@ -19,7 +19,7 @@ MonoBehaviour:
     secondsToArrive: 3
     duration: 44
     isOffice: 1
-    timedStress: 1.1
+    timedStress: 1.2
     hitStress: 0.2
     missStress: 3
     FirstTrack:
@@ -33,6 +33,7 @@ MonoBehaviour:
     - 42
     - 43
     - 45
+    - 47
     SecondTrack:
     - 9
     - 15
@@ -44,6 +45,7 @@ MonoBehaviour:
     - 37
     - 39
     - 43
+    - 46
     ThirdTrack:
     - 11
     - 19
@@ -66,3 +68,4 @@ MonoBehaviour:
     - 39
     - 41
     - 43
+    - 46
