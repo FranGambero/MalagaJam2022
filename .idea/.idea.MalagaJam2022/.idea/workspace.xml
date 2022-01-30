@@ -27,11 +27,8 @@
     <list default="true" id="b4c8b582-a5cb-49f4-8357-2482b5f1f839" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MalagaJam2022/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MalagaJam2022/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MalagaJam2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MalagaJam2022/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BeatTrack/Prefabs/BeatTrack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BeatTrack/Prefabs/BeatTrack.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/States/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/States/StateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/States/StateDataModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/States/StateDataModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stress/StressController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stress/StressController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +53,16 @@
         <option value="$PROJECT_DIR$/Assets/States/StateDataModelScriptable.cs" />
         <option value="$PROJECT_DIR$/Assets/BeatTrack/BeatTracksManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Conductor/Conductor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Stress/StressController.cs" />
         <option value="$PROJECT_DIR$/Assets/States/CycleTimeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Stress/StressBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Conductor/ConductorBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackButtonView.cs" />
         <option value="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackController.cs" />
-        <option value="$PROJECT_DIR$/Assets/States/StateController.cs" />
         <option value="$PROJECT_DIR$/Assets/States/StateDataModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Conductor/ConductorBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/States/StateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/BackgroundController/BackgroundController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Stress/StressController.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643473856787</updated>
       <workItem from="1643473861042" duration="18626000" />
-      <workItem from="1643532987143" duration="1090000" />
+      <workItem from="1643532987143" duration="3442000" />
     </task>
     <servers />
   </component>

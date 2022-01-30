@@ -6,7 +6,7 @@ namespace MJam22.Stress
     public class StressController
     {
         public float Stress => stressAmount;
-        float stressAmount = 10;
+        float stressAmount = 0;
         float maxStress = 100;
         UnityEvent onMaxStress;
 

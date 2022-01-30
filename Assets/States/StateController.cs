@@ -11,6 +11,7 @@ namespace MJam22.States
     public class StateController : MonoBehaviour
     {
         [SerializeField] List<StateDataModelScriptable> states;
+        [SerializeField] BackgroundController.BackgroundController backgroundController;
         [SerializeField] ConductorBehaviour conductorBehaviour;
         [SerializeField] CycleTimeController cycleTimeController;
         [SerializeField] StressBehaviour stressBehaviour;
@@ -40,13 +41,13 @@ namespace MJam22.States
         }
 
         #region Load
-        public void LoadState(int currentCycle) => LoadState(states[currentCycle].Data);
+        public void LoadState(int currentCycle) => LoadState(states[currentCycle].Data, currentCycle);
 
-        public void LoadState(StateDataModel state)
+        public void LoadState(StateDataModel state, int currentCycle)
         {
             LoadAudio(state);
             LoadCycleTime(state.duration);
-            LoadView(state.isOffice);
+            LoadView(state.isOffice, currentCycle);
             LoadStress(state.timedStress, state.hitStress, state.missStress);
             LoadTracks(new List<List<float>>{state.FirstTrack, state.SecondTrack, state.ThirdTrack, state.FourthTrack}, state.secondsToArrive);
         }
@@ -58,9 +59,10 @@ namespace MJam22.States
 
         void LoadCycleTime(int duration) => cycleTimeController.SetCycleTime(duration);
 
-        void LoadView(bool isOffice)
+        void LoadView(bool isOffice, int currentCycle)
         {
             //TODO: meter aqui el animator correspondiente y hacerle las animaciones
+            backgroundController.ChangeStatus(isOffice, currentCycle);
         }
 
         void LoadStress(float timedStress, float hitStres, float missStress)
