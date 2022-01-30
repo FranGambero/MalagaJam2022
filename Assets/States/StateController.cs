@@ -16,12 +16,12 @@ namespace MJam22.States
         [SerializeField] CycleTimeController cycleTimeController;
         [SerializeField] StressBehaviour stressBehaviour;
         [SerializeField] BeatTracksManager tracksManager;
-        
+
+        [Header("Note Prefabs")] 
+        [SerializeField] GameObject notePrefabOffice;
+        [SerializeField] GameObject notePrefabDrag;
         State currentState;
 
-      
-
-        
 
         #region Load
         public void LoadState(int currentCycle) => LoadState(states[currentCycle].Data, currentCycle);
@@ -32,7 +32,7 @@ namespace MJam22.States
             LoadCycleTime(state.duration);
             LoadView(state.isOffice, currentCycle);
             LoadStress(state.timedStress, state.hitStress, state.missStress);
-            LoadTracks(new List<List<float>>{state.FirstTrack, state.SecondTrack, state.ThirdTrack, state.FourthTrack}, state.secondsToArrive);
+            LoadTracks(new List<List<float>>{state.FirstTrack, state.SecondTrack, state.ThirdTrack, state.FourthTrack}, state.secondsToArrive, state.isOffice);
         }
 
         void LoadAudio(StateDataModel state)
@@ -55,12 +55,13 @@ namespace MJam22.States
             stressBehaviour.SetMissStress(missStress);
         }
 
-        void LoadTracks(List<List<float>> tracks, float speed)
+        void LoadTracks(List<List<float>> tracks, float speed, bool isOffice)
         {
             for(var i = 0; i < tracksManager.TrackControllers.Count; i++)
             {
                 tracksManager.TrackControllers[i].SetNotes(tracks[i].ToList());
                 tracksManager.TrackControllers[i].SetNoteSpeed(speed);
+                tracksManager.TrackControllers[i].SetNotePrefab(isOffice ? notePrefabOffice : notePrefabDrag);
             }
         }
         #endregion

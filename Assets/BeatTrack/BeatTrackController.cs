@@ -47,6 +47,7 @@ namespace MJam22.Beat
 
         public void SetNotes(List<float> notes) => notesToSpawn = notes;
         public void SetNoteSpeed(float secondsToArrive) => this.secondsToArrive = secondsToArrive;
+        public void SetNotePrefab(GameObject notePrefab) => this.NotePrefab = notePrefab;
 
         void InitListeners()
         {
