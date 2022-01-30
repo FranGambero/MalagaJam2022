@@ -7,6 +7,7 @@ namespace MJam22.BackgroundController
     {
         [SerializeField] GameObject officeBackground;
         [SerializeField] GameObject clubBackground;
+        [SerializeField] GameObject dragPosition;
 
         [SerializeField] Animator animator;
         [SerializeField] ParticleSystem officeHitParticle;
