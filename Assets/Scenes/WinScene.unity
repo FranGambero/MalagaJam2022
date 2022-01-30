@@ -420,7 +420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PRESS ANY KEY TO CONTINIUE
+  m_text: PRESS ESPACE TO CONTINIUE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 78b0f7b66f8cf6f49b063aaafb3972af, type: 2}
   m_sharedMaterial: {fileID: -464677532738437771, guid: 78b0f7b66f8cf6f49b063aaafb3972af, type: 2}
