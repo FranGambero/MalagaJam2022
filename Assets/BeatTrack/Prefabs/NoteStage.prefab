@@ -70,9 +70,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.13953361, g: 0.6320754, b: 0.36687508, a: 1}
+  m_SortingOrder: 32
+  m_Sprite: {fileID: -7264972599485739828, guid: 775bbdc4db1c4364fbf06bd025dce1ab, type: 3}
+  m_Color: {r: 0.96428573, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6166677543477946854}
   - component: {fileID: 6166677543477946855}
   m_Layer: 0
-  m_Name: Note
+  m_Name: NoteStage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,7 +143,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.9970478
 --- !u!50 &6166677543477946855
 Rigidbody2D:
   serializedVersion: 4

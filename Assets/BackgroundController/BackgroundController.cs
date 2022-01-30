@@ -20,8 +20,8 @@ namespace MJam22.BackgroundController
         [Header("Cookie Canvas")] 
         [SerializeField] Animator cookieCanvasAnimator;
         
-        const string DRAG_IN = "DragIn";
-        const string DRAG_OUT = "DragOut";
+        const string DRAG_IN = "dragIn";
+        const string DRAG_OUT = "dragOut";
 
         bool isOffice;
         int currentCycle;
@@ -38,9 +38,9 @@ namespace MJam22.BackgroundController
                     currenDragPose = dragPoses.Find(p => p.activeSelf);
                 }
                 currenDragPose.SetActive(false);
-                GameObject tmpCurrenDragPose = dragPoses[Random.Range(0, dragPoses.Count - 1)];
+                GameObject tmpCurrenDragPose = dragPoses[UnityEngine.Random.Range(0, dragPoses.Count - 1)];
                 if(tmpCurrenDragPose == currenDragPose) {
-                    tmpCurrenDragPose = dragPoses[Random.Range(0, dragPoses.Count - 1)];
+                    tmpCurrenDragPose = dragPoses[UnityEngine.Random.Range(0, dragPoses.Count - 1)];
                 }
                 currenDragPose = tmpCurrenDragPose;
                 currenDragPose.SetActive(true);
@@ -82,7 +82,7 @@ namespace MJam22.BackgroundController
             }
             else
             {
-                LaunchTransitionAnimation(0.5f, ChangeToDragMode, DRAG_IN);
+                LaunchTransitionAnimation(1f, ChangeToDragMode, DRAG_IN);
             }
         }
 

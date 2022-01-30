@@ -186,8 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2979a24642984e08a4c8d862641194e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  officeBackground: {fileID: 2109171426}
-  clubBackground: {fileID: 1465204729}
+  officeBackground: {fileID: 1245131914}
+  clubBackground: {fileID: 325175224}
   dragPosition: {fileID: 1153277717}
   animator: {fileID: 0}
   officeHitParticle: {fileID: 0}
@@ -200,6 +200,7 @@ MonoBehaviour:
   - {fileID: 43160041}
   - {fileID: 480559817}
   - {fileID: 973820613}
+  cookieCanvasAnimator: {fileID: 1291784963}
 --- !u!114 &199092069 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
@@ -364,6 +365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+--- !u!1 &325175224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4357118701531852950, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
+  m_PrefabInstance: {fileID: 359402270}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &352967912 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3092230051402727767, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
@@ -1107,7 +1113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1245131915
 Transform:
   m_ObjectHideFlags: 0
@@ -1129,6 +1135,11 @@ Transform:
   m_Father: {fileID: 164124509}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1291784963 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1495008337915433663, guid: b8c12ca4c6be0f945bcdaa1113aff153, type: 3}
+  m_PrefabInstance: {fileID: 1382695516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1316581724
 GameObject:
   m_ObjectHideFlags: 0
