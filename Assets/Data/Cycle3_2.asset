@@ -23,7 +23,6 @@ MonoBehaviour:
     hitStress: 2
     missStress: 0.25
     FirstTrack:
-    - 7
     - 12
     - 22
     - 37
@@ -33,7 +32,6 @@ MonoBehaviour:
     - 52
     - 60
     SecondTrack:
-    - 6
     - 10
     - 12
     - 20
@@ -43,7 +41,6 @@ MonoBehaviour:
     - 50
     - 60
     ThirdTrack:
-    - 7
     - 9
     - 11
     - 13

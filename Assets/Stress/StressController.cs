@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace MJam22.Stress
 {
@@ -26,8 +27,10 @@ namespace MJam22.Stress
 
         void CheckStress()
         {
-            if(stressAmount >= maxStress)
+            if(stressAmount >= maxStress) {
                 onMaxStress.Invoke();
+                SceneManager.LoadScene(3);
+            }
         }
     }
 }
