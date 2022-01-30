@@ -1,4 +1,5 @@
-﻿using MJam22.States;
+﻿using System;
+using MJam22.States;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,12 +10,11 @@ namespace MJam22.GameManager
         [SerializeField] StateController stateController;
         int currentCycle = 0;
 
-        public void Update()
+        void Start()
         {
-            if(Input.GetKeyDown(KeyCode.Space))
-                FirstLaunch();
+            FirstLaunch();
         }
-        
+
         public void NextCycle()
         {
             currentCycle++;
