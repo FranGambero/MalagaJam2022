@@ -1293,11 +1293,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2070065105106972950, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: m_Color.b
-      value: 0.86305314
+      value: 0.48685813
       objectReference: {fileID: 0}
     - target: {fileID: 2070065105106972950, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: m_Color.g
-      value: 0.32452828
+      value: 0.32549024
       objectReference: {fileID: 0}
     - target: {fileID: 2070065105106972950, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: m_Color.r
@@ -1305,11 +1305,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2411297502641982764, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: m_Color.b
-      value: 0.86305314
+      value: 0.48685813
       objectReference: {fileID: 0}
     - target: {fileID: 2411297502641982764, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: m_Color.g
-      value: 0.32452828
+      value: 0.32549024
       objectReference: {fileID: 0}
     - target: {fileID: 2411297502641982764, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: m_Color.r
@@ -1712,6 +1712,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7686668526673324876, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
+      propertyPath: notePrefabDrag
+      value: 
+      objectReference: {fileID: 6166677543477946852, guid: 757e755197c90ae41bf7f0b77599dada, type: 3}
+    - target: {fileID: 7686668526673324876, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
+      propertyPath: notePrefabOffice
+      value: 
+      objectReference: {fileID: 6166677543477946852, guid: 3d24e9523ab05c34aac79ccb402e9ebc, type: 3}
+    - target: {fileID: 7686668526673324876, guid: e01988c1524273a46938ec3d558d28e1, type: 3}
       propertyPath: states.Array.size
       value: 8
       objectReference: {fileID: 0}
@@ -1950,7 +1958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4383330619144468338, guid: a0b9ec5783cc1d744909b77af7e07018, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 912
       objectReference: {fileID: 0}
     - target: {fileID: 4383330619144468338, guid: a0b9ec5783cc1d744909b77af7e07018, type: 3}
       propertyPath: m_AnchoredPosition.y
