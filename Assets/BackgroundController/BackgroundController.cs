@@ -11,7 +11,7 @@ namespace MJam22.BackgroundController
         [SerializeField] GameObject clubBackground;
         [SerializeField] GameObject dragPosition;
 
-        [SerializeField] Animator animator;
+        [SerializeField] Animator officinistAnimator;
         [SerializeField] ParticleSystem officeHitParticle;
 
         [SerializeField] List<GameObject> dragPoses;
@@ -22,6 +22,7 @@ namespace MJam22.BackgroundController
         
         const string DRAG_IN = "dragIn";
         const string DRAG_OUT = "dragOut";
+        const string DAMAGE_IN = "OnDamage";
 
         bool isOffice;
         int currentCycle;
@@ -30,7 +31,7 @@ namespace MJam22.BackgroundController
         {
             if(isOffice)
             {
-                //officeHitParticle.Play();
+                officeHitParticle.Play();
             }
             else
             {
@@ -51,7 +52,7 @@ namespace MJam22.BackgroundController
         {
             if(isOffice)
             {
-                
+                officinistAnimator.SetTrigger(DAMAGE_IN);
             }
             else
             {
