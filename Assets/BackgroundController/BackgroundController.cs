@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace MJam22.BackgroundController
@@ -14,6 +16,12 @@ namespace MJam22.BackgroundController
 
         [SerializeField] List<GameObject> dragPoses;
         private GameObject currenDragPose;
+
+        [Header("Cookie Canvas")] 
+        [SerializeField] Animator cookieCanvasAnimator;
+        
+        const string DRAG_IN = "DragIn";
+        const string DRAG_OUT = "DragOut";
 
         bool isOffice;
         int currentCycle;
@@ -67,14 +75,39 @@ namespace MJam22.BackgroundController
         {
             if(isOffice)
             {
-                officeBackground.SetActive(true);
-                clubBackground.SetActive(false);
+                if(currentCycle == 0)
+                    LaunchTransitionAnimation(0, ChangeToOfficeMode, DRAG_OUT);
+                else
+                    ChangeToOfficeMode();
             }
             else
             {
-                officeBackground.SetActive(false);
-                clubBackground.SetActive(true);
+                LaunchTransitionAnimation(0.5f, ChangeToDragMode, DRAG_IN);
             }
+        }
+
+        void ChangeToOfficeMode()
+        {
+            officeBackground.SetActive(true);
+            clubBackground.SetActive(false);
+        }
+
+        void ChangeToDragMode()
+        {
+            officeBackground.SetActive(false);
+            clubBackground.SetActive(true);
+        }
+
+        void LaunchTransitionAnimation(float seconds, Action callback, string transitionMode)
+        {
+            StartCoroutine(ChangeBackgroundAfter(seconds, callback, transitionMode));
+        }
+
+        IEnumerator ChangeBackgroundAfter(float seconds, Action callback, string transitionMode)
+        {
+            cookieCanvasAnimator.SetTrigger(transitionMode);
+            yield return new WaitForSeconds(seconds);
+            callback?.Invoke();
         }
     }
 }
