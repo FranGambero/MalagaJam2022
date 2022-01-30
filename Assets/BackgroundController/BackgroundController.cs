@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using MJam22.Beat;
 using UnityEngine;
 
 namespace MJam22.BackgroundController
@@ -15,6 +16,7 @@ namespace MJam22.BackgroundController
         [SerializeField] ParticleSystem officeHitParticle;
 
         [SerializeField] List<GameObject> dragPoses;
+        [SerializeField] List<BeatTrackController> beatTrackControllers;
         private GameObject currenDragPose;
 
         [Header("Cookie Canvas")] 
@@ -25,6 +27,20 @@ namespace MJam22.BackgroundController
 
         bool isOffice;
         int currentCycle;
+
+        void Start()
+        {
+            InitListeners();
+        }
+
+        void InitListeners()
+        {
+            foreach(var beatTrackController in beatTrackControllers)
+            {
+                beatTrackController.onNoteOutOfSight.AddListener((NoteBehaviour)=>OnNoteMissEffect());
+                beatTrackController.onHitNote.AddListener(OnNoteHitEffect);
+            }
+        }
 
         public void OnNoteHitEffect()
         {
@@ -75,7 +91,7 @@ namespace MJam22.BackgroundController
         {
             if(isOffice)
             {
-                if(currentCycle == 0)
+                if(currentCycle != 0)
                     LaunchTransitionAnimation(0, ChangeToOfficeMode, DRAG_OUT);
                 else
                     ChangeToOfficeMode();
