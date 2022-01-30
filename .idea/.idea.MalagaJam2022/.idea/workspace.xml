@@ -25,10 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4c8b582-a5cb-49f4-8357-2482b5f1f839" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MalagaJam2022/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MalagaJam2022/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MalagaJam2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MalagaJam2022/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/States/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/States/StateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stress/StressController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stress/StressController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/CoockieCanvas.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CoockieCanvas.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype 1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +57,12 @@
         <option value="$PROJECT_DIR$/Assets/Stress/StressBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackButtonView.cs" />
-        <option value="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackController.cs" />
         <option value="$PROJECT_DIR$/Assets/States/StateDataModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Conductor/ConductorBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/States/StateController.cs" />
-        <option value="$PROJECT_DIR$/Assets/BackgroundController/BackgroundController.cs" />
         <option value="$PROJECT_DIR$/Assets/Stress/StressController.cs" />
+        <option value="$PROJECT_DIR$/Assets/BackgroundController/BackgroundController.cs" />
+        <option value="$PROJECT_DIR$/Assets/BeatTrack/BeatTrackController.cs" />
       </list>
     </option>
   </component>

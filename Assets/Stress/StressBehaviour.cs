@@ -14,7 +14,7 @@ namespace MJam22.Stress
 
         StressController stressController;
         Coroutine timedCoroutine;
-        UnityEvent OnMaxStress = new UnityEvent();
+        public UnityEvent OnMaxStress = new UnityEvent();
 
         float timedStress;
         float missStress;

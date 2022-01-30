@@ -8,10 +8,6 @@ namespace MJam22.GameManager
         [SerializeField] StateController stateController;
         int currentCycle = 0;
 
-        public void Start()
-        {
-        }
-
         public void Update()
         {
             if(Input.GetKeyDown(KeyCode.Space))
@@ -21,8 +17,12 @@ namespace MJam22.GameManager
         public void NextCycle()
         {
             currentCycle++;
-            if(currentCycle >= 8)
+            if(currentCycle >= 6)
+            {
+                NoMoreCycles();
                 return;
+            }
+                
             
             LoadCycle();
             LaunchCycle();
@@ -40,5 +40,10 @@ namespace MJam22.GameManager
         }
 
         void LaunchCycle() => stateController.LaunchCurrentState();
+
+        void NoMoreCycles()
+        {
+            
+        }
     }
 }
