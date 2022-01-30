@@ -125,11 +125,20 @@ namespace MJam22.Beat
                 RemoveNote(note);
                 onHitNote.Invoke();
                 hitParticles.Play();
+                return;
+            }
+
+            var aliveNotes = noteHolder.GetAliveNotes().ToList();
+            if(aliveNotes.Any())
+            {
+                onNoteOutOfSight.Invoke(null);
             }
         }
 
         void FailNote(NoteBehaviour note)
         {
+            if(note == null)
+                return;
             RemoveNote(note);
             Debug.Log("Aumenta el estres");
         }
