@@ -32,6 +32,9 @@ MonoBehaviour:
     - 50
     - 52
     - 60
+    - 64
+    - 69
+    - 82
     SecondTrack:
     - 6
     - 10
@@ -42,6 +45,9 @@ MonoBehaviour:
     - 37
     - 50
     - 60
+    - 67
+    - 72
+    - 81
     ThirdTrack:
     - 7
     - 9
@@ -54,6 +60,8 @@ MonoBehaviour:
     - 55
     - 57
     - 59
+    - 75
+    - 79
     FourthTrack:
     - 8
     - 10
@@ -66,3 +74,5 @@ MonoBehaviour:
     - 49
     - 55
     - 64
+    - 75
+    - 79
