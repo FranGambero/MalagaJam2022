@@ -189,7 +189,7 @@ MonoBehaviour:
   officeBackground: {fileID: 1245131914}
   clubBackground: {fileID: 325175224}
   dragPosition: {fileID: 1153277717}
-  animator: {fileID: 568833368}
+  officinistAnimator: {fileID: 568833368}
   officeHitParticle: {fileID: 784846213}
   dragPoses:
   - {fileID: 1980496122}
@@ -200,6 +200,11 @@ MonoBehaviour:
   - {fileID: 43160041}
   - {fileID: 480559817}
   - {fileID: 973820613}
+  beatTrackControllers:
+  - {fileID: 679583631}
+  - {fileID: 132962835}
+  - {fileID: 552185173}
+  - {fileID: 199092069}
   cookieCanvasAnimator: {fileID: 1291784963}
 --- !u!114 &199092069 stripped
 MonoBehaviour:
@@ -386,6 +391,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3219975093913765745, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3874894683570857481, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -451,6 +460,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6457240114705960799, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954509149949003893, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296543156743733946, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871434974088595734, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1959,6 +1980,10 @@ PrefabInstance:
     - target: {fileID: 9106553641181385498, guid: 38d807f0981f38f4a8bfd8637195ba8e, type: 3}
       propertyPath: m_Name
       value: OfficeParent
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106553641181385498, guid: 38d807f0981f38f4a8bfd8637195ba8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9106553641181385499, guid: 38d807f0981f38f4a8bfd8637195ba8e, type: 3}
       propertyPath: m_RootOrder

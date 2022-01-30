@@ -24,7 +24,7 @@ namespace MJam22.BackgroundController
         
         const string DRAG_IN = "dragIn";
         const string DRAG_OUT = "dragOut";
-        const string DAMAGE_IN = "OnDamage";
+        const string DAMAGE_IN = "OnDamaged";
 
         bool isOffice;
         int currentCycle;
