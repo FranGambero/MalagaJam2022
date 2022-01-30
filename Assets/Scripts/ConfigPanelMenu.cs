@@ -22,12 +22,12 @@ public class ConfigPanelMenu : MonoBehaviour {
 
     public void ShowConfigPanel() {
         configPanel.SetActive(!configPanel.activeSelf);
-        if (!configPanel.activeSelf) {
-            Time.timeScale = 1;
-        } else {
-            Debug.Log("PAUSAO");
-            Time.timeScale = 0;
-        }
+        //if (!configPanel.activeSelf) {
+        //    Time.timeScale = 1;
+        //} else {
+        //    Debug.Log("PAUSAO");
+        //    Time.timeScale = 0;
+        //}
     }
 
     public void backToMainMenu() {
