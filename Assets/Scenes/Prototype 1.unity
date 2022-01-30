@@ -189,7 +189,7 @@ MonoBehaviour:
   officeBackground: {fileID: 1245131914}
   clubBackground: {fileID: 325175224}
   dragPosition: {fileID: 1153277717}
-  officinistAnimator: {fileID: 568833368}
+  officinistAnimator: {fileID: 0}
   officeHitParticle: {fileID: 784846213}
   dragPoses:
   - {fileID: 1980496122}
@@ -300,6 +300,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+      propertyPath: hitParticles
+      value: 
+      objectReference: {fileID: 2053301216}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: secondsToArrive
       value: 3
@@ -504,11 +508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6741358b933ec34380610471caab8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &568833368 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5611438144175798834, guid: 38d807f0981f38f4a8bfd8637195ba8e, type: 3}
-  m_PrefabInstance: {fileID: 9106553642086770576}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &679583631 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
@@ -791,6 +790,10 @@ PrefabInstance:
       propertyPath: inputKey
       value: 112
       objectReference: {fileID: 0}
+    - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+      propertyPath: hitParticles
+      value: 
+      objectReference: {fileID: 1630534475}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: secondsToArrive
       value: 3
@@ -1191,6 +1194,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!198 &1474437164 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5092805707622325089, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+  m_PrefabInstance: {fileID: 2091226901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1630534475 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5092805707622325089, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+  m_PrefabInstance: {fileID: 976755265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1659422210 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5092805707622325089, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+  m_PrefabInstance: {fileID: 2411297503406406751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1741260643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,6 +1302,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3219975093913765745, guid: 8bd6b3fe476128e45bda7444a3452a77, type: 3}
   m_PrefabInstance: {fileID: 359402270}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &2053301216 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5092805707622325089, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+  m_PrefabInstance: {fileID: 297645926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2091226901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1367,6 +1390,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+      propertyPath: hitParticles
+      value: 
+      objectReference: {fileID: 1474437164}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: secondsToArrive
       value: 3
@@ -1626,6 +1653,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
+      propertyPath: hitParticles
+      value: 
+      objectReference: {fileID: 1659422210}
     - target: {fileID: 2411297504159534838, guid: 843d4275a137fbd4f9df9b7b08489cb8, type: 3}
       propertyPath: secondsToArrive
       value: 3

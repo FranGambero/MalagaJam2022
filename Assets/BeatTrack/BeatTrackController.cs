@@ -16,6 +16,7 @@ namespace MJam22.Beat
         [SerializeField] Transform NoteSpawnPosition;
         [SerializeField] Transform NoteEndPosition;
         [SerializeField] List<float> notesToSpawn;
+        [SerializeField] ParticleSystem hitParticles;
 
         NoteHolder noteHolder;
         bool isActive = false;
@@ -123,6 +124,7 @@ namespace MJam22.Beat
                 var note = notesToClear.First();
                 RemoveNote(note);
                 onHitNote.Invoke();
+                hitParticles.Play();
             }
         }
 

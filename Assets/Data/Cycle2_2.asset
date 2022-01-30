@@ -15,15 +15,14 @@ MonoBehaviour:
   data:
     clip: {fileID: 8300000, guid: 6183eb48ba83a254bbeac02bc85e2330, type: 3}
     bpm: 124
-    firstBeatOffset: 0
+    firstBeatOffset: -0.2
     secondsToArrive: 2.5
     duration: 37
     isOffice: 0
     timedStress: 0
-    hitStress: 5
-    missStress: 0
+    hitStress: 2
+    missStress: 0.25
     FirstTrack:
-    - 7
     - 12
     - 22
     - 37
@@ -33,7 +32,6 @@ MonoBehaviour:
     - 52
     - 60
     SecondTrack:
-    - 6
     - 10
     - 12
     - 20
@@ -43,7 +41,6 @@ MonoBehaviour:
     - 50
     - 60
     ThirdTrack:
-    - 7
     - 9
     - 11
     - 13

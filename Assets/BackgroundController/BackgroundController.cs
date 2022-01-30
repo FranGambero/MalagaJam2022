@@ -68,7 +68,7 @@ namespace MJam22.BackgroundController
         {
             if(isOffice)
             {
-                officinistAnimator.SetTrigger(DAMAGE_IN);
+                officinistAnimator?.SetTrigger(DAMAGE_IN);
             }
             else
             {
@@ -93,7 +93,7 @@ namespace MJam22.BackgroundController
             if(isOffice)
             {
                 if(currentCycle != 0)
-                    LaunchTransitionAnimation(0, ChangeToOfficeMode, DRAG_OUT);
+                    LaunchTransitionAnimation(0.8f, ChangeToOfficeMode, DRAG_OUT);
                 else
                     ChangeToOfficeMode();
             }

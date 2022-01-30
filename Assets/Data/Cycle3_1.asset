@@ -19,9 +19,9 @@ MonoBehaviour:
     secondsToArrive: 2
     duration: 34
     isOffice: 1
-    timedStress: 3
+    timedStress: 1.2
     hitStress: 0
-    missStress: 15
+    missStress: 2
     FirstTrack:
     - 7
     - 12
